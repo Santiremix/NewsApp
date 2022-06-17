@@ -20,12 +20,7 @@ const Form = () => {
     url: "",
   };
 
-  const [data, setData] = useState({
-    urlToImage: "",
-    title: "",
-    description: "",
-    url: "",
-  });
+  const [data, setData] = useState(initialState);
 
   const clearState = () => {
     setData({ ...initialState });
@@ -39,23 +34,19 @@ const Form = () => {
       setBtnDisabled(false);
     }
     setData({ ...data, [event.target.name]: event.target.value });
-    console.log(event.target.name)
   };
 
 let navegate = useNavigate();
 
   const handleSubmit = (event) => {
-    setBtnDisabled(true);
+    setBtnDisabled();
     event.preventDefault();
     saveData();
-    console.log(
-      "sending data..." + data.title + " " + data.description + " " + data.url + " "
-    );
-    setMessage("Mensaje enviado correctamente." + ' Redirigiendo...');
     clearState();
+    setMessage("Mensaje enviado correctamente." + ' Redirigiendo...');
     setTimeout(()=>{
       navegate('/news')
-  },5000)
+  },1500)
   };
 
 
