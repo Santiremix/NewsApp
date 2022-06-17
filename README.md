@@ -10,8 +10,6 @@
     
 - [Objetivos]
 
-- [Estructura de la página]
-
 - [Documentacion de React]
 
 - [Rutas]
