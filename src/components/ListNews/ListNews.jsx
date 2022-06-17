@@ -18,7 +18,6 @@ const ListNews = () => {
 
   return (
     <>
-        {/* <h2>Noticias de la Web</h2> */}
         <div className='order'>
         {articles.map(({title, description, url, urlToImage}) => (
         <NewsItem title={title} description={description} url={url} urlToImage={urlToImage} />

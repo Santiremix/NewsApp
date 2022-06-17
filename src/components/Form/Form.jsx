@@ -4,23 +4,24 @@ import './Form.scss'
 import {useNavigate} from 'react-router-dom'
 
 const Form = () => {
-  let newsInfo = JSON.parse(localStorage.getItem("NOTICIA")) || [];
+  let newsInfo = JSON.parse(localStorage.getItem("ADDED NEW")) || [];
   const saveData = () => {
     newsInfo.push(data);
-    localStorage.setItem("NOTICIA", JSON.stringify(newsInfo));
+    localStorage.setItem("ADDED NEW", JSON.stringify(newsInfo));
   };
   const [btnDisabled, setBtnDisabled] = useState(true);
 
   const [message, setMessage] = useState("");
-  const [messageOk, setMessageOk] = useState("");
 
   const initialState = {
+    urlToImage: "",
     title: "",
     description: "",
     url: "",
   };
 
   const [data, setData] = useState({
+    urlToImage: "",
     title: "",
     description: "",
     url: "",
@@ -32,7 +33,7 @@ const Form = () => {
 
   const handleInputChange = (event) => {
     if (data.title.length < 2) {
-      setMessage("el titulo tiene que tener al menos 3 caracteres");
+      setMessage("El título tiene que tener al menos 3 caracteres.");
     } else {
       setMessage(null);
       setBtnDisabled(false);
@@ -50,7 +51,7 @@ let navegate = useNavigate();
     console.log(
       "sending data..." + data.title + " " + data.description + " " + data.url + " "
     );
-    setMessageOk("Mensaje enviado correctamente");
+    setMessage("Mensaje enviado correctamente." + ' Redirigiendo...');
     clearState();
     setTimeout(()=>{
       navegate('/news')
@@ -65,7 +66,7 @@ let navegate = useNavigate();
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Image"
+        placeholder="Image URL"
         onChange={handleInputChange}
         name="urlToImage"
       />
@@ -87,7 +88,8 @@ let navegate = useNavigate();
         onChange={handleInputChange}
         name="url"
       />
-      <button type="submit">Publicar</button>
+      <button type="submit" disabled={btnDisabled}>Publicar</button>
+      <span className="Message">{message}</span>
 </form>
 </div>
 </>

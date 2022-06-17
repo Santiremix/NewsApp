@@ -6,11 +6,8 @@ const Home = () => {
   return (
     <>
     <div className='home'>
-    {/* <div>
-    <h1>Bienvenido a NewsApp, elige que quieres hacer</h1>
-    </div> */}
     <div>
-      <Link to="/list">
+      <Link to="/news">
         <button type="button">
           Leer Noticias
         </button>
