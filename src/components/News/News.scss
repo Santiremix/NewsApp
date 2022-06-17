@@ -1,0 +1,18 @@
+.order{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        .newsCont{
+        display: inline-block;
+        border: 1px solid black;
+        width: 400px;
+        height: 500px;
+        padding: 15px;
+        margin: 30px;
+            .image{
+                width: 400px;
+                height: 300px;
+            }
+        }
+}
+

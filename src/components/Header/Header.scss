@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 5, 5);
+    height: 90px;
+    align-items: center;
+    .title{
+        font-size: 35px;
+        margin-left: 50px;
+        color: azure;
+    }
+    a{
+        text-decoration: none;
+    }
+    .nav-links{
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin-right: 120px;
+            a{
+                padding-left: 100px;
+                color: azure;
+            }
+        }
+    }
+}

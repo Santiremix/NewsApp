@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+#  <center> 📰 Web de Noticias con React 📰</center> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ## 📑 Indice 
 
-## Available Scripts
+ - [Sobre el proyecto]
 
-In the project directory, you can run:
+    - [Instalación]
 
-### `npm start`
+    - [Tecnologías utilizadas]
+    
+- [Objetivos]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Estructura de la página]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Documentacion de React]
 
-### `npm test`
+- [Rutas]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Retos y dificultades ]
 
-### `npm run build`
+- [Autor]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Sobre el proyecto 🙇‍♀️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Instalación
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Instalamos react con la carpeta que contendrá el proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npx create-react-app nombre-aplicacion	 
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instalar el siguiente paquete para trabajar con las rutas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+$ npm install react-router-dom@6
+```
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Instalamos el paquete sass para los estilos
 
-### Analyzing the Bundle Size
+```
+$ npm install sass
+```
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tecnologías utilizadas ⛏️
 
-### Making a Progressive Web App
+- Javascript
+- HTML
+- React
+- React-GlobalContext
+- React-Router
+- CSS
+- Sass
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+# Objetivos 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Trabajar con React para practicar todos los elementos básicos de React ya vistos.
+* Desarrollar una "Web de Noticias"
+* Uso de NYT News API.
+* Uso del router React.
+* Uso de componentes anidados (cabecera, home, pie de página, formulario, lista de noticias).
+* Uso de React Context.
+* Uso de SASS.
 
-### Deployment
+<br><br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Documentación de React
 
-### `npm run build` fails to minify
+https://es.reactjs.org/docs/getting-started.html
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+
+# Retos y Dificultades
+
+En lo personal, el mayor problema ha sido poder entender el funcionamiento del Context y saber desenvolverme 
+de manera efectiva utilizandolo.
+
+
+<br>
+
+
+
+
+
+<br>
+
+# Autor
+
+Santiago Guevara
+
+- https://github.com/Santiremix
